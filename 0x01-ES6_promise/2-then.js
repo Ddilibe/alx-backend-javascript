@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-function handleResponseFromAPI(promise) {
+export default function handleResponseFromAPI(promise) {
 	console.log("Got a response from the API")
 	if (promise) {
 		return {
@@ -12,6 +12,3 @@ function handleResponseFromAPI(promise) {
 	}
 }
 
-module.exports = {
-	handleResponseFromAPI: handleResponseFromAPI,
-}
