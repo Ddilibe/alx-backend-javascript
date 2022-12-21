@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 /*
 	Script containing a function that a promise
 */
