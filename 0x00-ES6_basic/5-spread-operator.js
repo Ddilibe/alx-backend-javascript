@@ -5,7 +5,5 @@
 */
 
 export default function concatArrays(array1, array2, string) {
-	array1.concat(array2);
-	array1.concat([...string]);
-	return array1;
+	return [...array1, ...array2, ...string];
 }
