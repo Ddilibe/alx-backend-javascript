@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 
+import {uploadPhoto, createUser} from "./utils";
 
-function handleProfileSignup() {
-	const utils = require("./utils");
-	let photo = utils.uploadPhoto;
-	let user = utils.createUser;
-	Promise.any([photo(), user()]).then((value) => {console.log(value)});
-	.catch(() => console.log("Signup system o"))
-}
-
-module.exports = {
-	handleProfileSignup: handleProfileSignup
+export default function handleProfileSignup() {
+	return Promise
+	.any([uploadPhoto(), createUser()])
+	.then((res) => {
+    	console.log(`${res[0].body} ${res[1].firstName} ${res[1].lastName}`);
+    })
+	.catch(() => console.log("Signup system offline"))
 }
