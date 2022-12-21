@@ -25,3 +25,8 @@ Exploration in the basics of ES6
 8. Explain Object creation and their properties in ES6
 
 9. Explain the iterators and for-of loop
+
+# Files and its contents
+
+
+# Notes

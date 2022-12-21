@@ -1,20 +1,20 @@
 #!/usr/bin/env node
 
 function uploadPhoto() {
-	return {
-		status: 200.
-		body: 'photo-profile-1',
-	}
+  return Promise.resolve({
+    status: 200,
+    body: 'photo-profile-1',
+  });
 }
 
 function createUser() {
-	return {
-		firstName: "Guillaume",
-		lastName:  "Salva",
-	}
+  return Promise.resolve({
+    firstName: 'Guillaume',
+    lastName: 'Salva',
+  });
 }
 
-module.exports {
+module.exports = {
 	uploadPhoto : uploadPhoto,
 	createUser: createUser,
 }

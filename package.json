@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/Ddilibe/alx-backend-javascript/issues"
   },
-  "homepage": "https://github.com/Ddilibe/alx-backend-javascript#readme"
+  "homepage": "https://github.com/Ddilibe/alx-backend-javascript#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
+    "eslint": "^8.30.0",
+    "jest": "^29.3.1"
+  }
 }
