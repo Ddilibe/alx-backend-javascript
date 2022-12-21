@@ -4,7 +4,6 @@
 	Script containing a function that a promise
 */
 
-function getResponseFromAPI() {
-}.then({
-	console.log(true);
-})
+export default function getResponseFromAPI() {
+	return new Promise(() => {});
+}
