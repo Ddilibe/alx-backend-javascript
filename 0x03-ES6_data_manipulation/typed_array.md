@@ -19,3 +19,7 @@ The ArrayBuffer is a data type that is used to represent a generic, fixed-length
 | Float64Array | -1.8E308 to | 1 | 8E308 and 5E-324 is the min positive number	8	64-bit IEEE floating point number (16 significant digits e.g., 1.123...15) |unrestricted double | double |
 | BigInt64Array | -263 to 263 | - | 1 | 8 |64-bit two's complement signed integer | bigint	| int64_t (signed long long) |
 | BigUint64Array | 	0 to 264 |  - 1 | 8 |	64-bit unsigned integer | bigint | uint64_t (unsigned long long) |
+
+## Example method of using typed array
+```javascript
+```
