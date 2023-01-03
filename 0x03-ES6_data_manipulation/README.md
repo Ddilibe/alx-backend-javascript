@@ -10,6 +10,6 @@
 ### Resources
 1. [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 2. [Typed Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
-3. [Set Data Structure]
+3. [Set Data Structure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 4. [Map Data Structure]
 5. [Weakmap]

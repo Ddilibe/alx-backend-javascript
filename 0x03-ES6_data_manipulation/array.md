@@ -1,4 +1,4 @@
-# JavaScript Arrays
+ # JavaScript Arrays
 
 ### What are arrays?
 An array is a javascript object that enable the storing of collection of multiple items under a single name and has members for performing common array operations
