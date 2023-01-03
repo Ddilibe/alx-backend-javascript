@@ -10,7 +10,7 @@ A Map object is a javascript object that holds key value pairs and remember the 
 4. They let you detect whether something is stored at a key.
 Objects has been used as maps historically.
 
-### Differences
+#### Differences
 | Property | Maps | Objects |
 | ---- | ---- | ---- |
 | Accidental keys | A Map does not contain any keys by default. It only contains what is explicitly put into it. | An Object has a prototype, so it contains default keys that could collide with your own keys if you're not careful. |
