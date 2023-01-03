@@ -22,4 +22,10 @@ The ArrayBuffer is a data type that is used to represent a generic, fixed-length
 
 ## Example method of using typed array
 ```javascript
+// First, Create an Array buffer and declare the length in the function
+const buffer = new ArrayBuffer(32);
+// Second, create an Data View of your chose to read the chunk of memory space occupied by the buffer
+const int32view = new Int32Array(buffer);
+// Third, the data view can now be used as an array
+int32view[3] = 4;
 ```
