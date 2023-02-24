@@ -12,7 +12,7 @@ function calculateNumber (type, a, b) {
 
 		if (type === "DIVIDE") {
 			if (bb == 0){
-				new Error("Error");
+				throw new Error();
 			}
 			return aa/bb;
 		}

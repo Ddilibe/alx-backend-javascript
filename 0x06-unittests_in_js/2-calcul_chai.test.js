@@ -1,5 +1,6 @@
 const assert = require('assert');
 const calculateNumber = require('./1-calcul');
+const {it, describe} = require('mocha');
 describe("calculateNumber", function () {
 	it('Testing the addition of Whole numbers', function () {
 		assert.equal(calculateNumber("SUM", 1, 2), 3)
