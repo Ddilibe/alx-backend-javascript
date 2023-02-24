@@ -1,23 +1,25 @@
-const assert = require('assert');
-const calculateNumber = require('./1-calcul');
-const {it, describe} = require('mocha');
+const expext = require('chai').expect;
+const calculateNumber = require('./2-calcul_chai');
 describe("calculateNumber", function () {
 	it('Testing the addition of Whole numbers', function () {
-		assert.equal(calculateNumber("SUM", 1, 2), 3)
+		expext(calculateNumber("SUM", 1, 2)).to.equal(3);
 	});
 	it("Testing the addition of floats for rounding", function ()  {
-		assert.equal(calculateNumber('SUM', 1.5, 1.5), 4)
+		expext(calculateNumber('SUM', 1.5, 1.5)).to.equal(4);
 	});
 	it("Testing the subtraction of whole numbers", function ()  {
-		assert.equal(calculateNumber("SUBTRACT", 2, 3), -1);
+		expext(calculateNumber("SUBTRACT", 2, 3)).to.equal(-1);
 	});
 	it("Testing the subtraction of floats for rounding", function ()  {
-		assert.equal(calculateNumber("SUBTRACT", 4.5, 2.3), 3);
+		expext(calculateNumber("SUBTRACT", 4.5, 2.3)).to.equal(3);
 	});
 	it('Testing the divition of whole number', function ()  {
-		assert.equal(calculateNumber("DIVIDE", 12, 2), 6);
+		expext(calculateNumber("DIVIDE", 12, 2)).to.equal(6);
 	});
 	it("Testing the division of floats for rounding", function ()  {
-		assert.equal(calculateNumber("DIVIDE", 16.2, 8.4), 2);
+		expext(calculateNumber("DIVIDE", 16.2, 8.4)).to.equal(2);
+	});
+	it("Testing the division of floats for rounding in error analysis", function () {
+		expext(calculateNumber("DIVIDE", 16.2, 0.0)).to.equal("Error");
 	});
 });
