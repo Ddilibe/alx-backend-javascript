@@ -1,19 +1,19 @@
 const assert = require('assert');
 const calculateNumber = require('./0-calcul');
-describe('calculateNumber', () => {
-	it("", () => {
+describe('calculateNumber', function ()  {
+	it("", function ()  {
 		assert.equal(calculateNumber(2,2), 4);
 	});
-	it("", () => {
+	it("", function () {
 		assert.notEqual(calculateNumber(2,2), 5);
 	});
-	it("", () => {
+	it("", function ()  {
 		assert.equal(typeof(calculateNumber(2,2)), "number");
 	});
-	it("", () => {
+	it("", function () {
 		assert.notEqual(typeof(calculateNumber(2,2)), "string");
 	});
-	it("", () => {
+	it("", function () {
 		assert.equal(calculateNumber(2, 2.8), 5)
 	});
 });
