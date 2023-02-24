@@ -2,9 +2,9 @@
   "name": "0x06-unittests_in_js",
   "version": "1.0.0",
   "description": "",
-  "main": "0-calcul.test.js",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Ddilibe",
   "license": "ISC",
